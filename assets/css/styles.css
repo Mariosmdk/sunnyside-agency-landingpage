@@ -97,7 +97,7 @@ ul li{
 }
 #hero img{
     width: 36px;
-    margin-top: -100px;
+    margin-top: 50px;
 }
 
 /* Middle sections */
@@ -137,14 +137,30 @@ ul li{
 #graphic-design{
     background-image: url(/assets/images/desktop/image-graphic-design.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
-    height: 600px;
+    height: 800px;
 }
 #photography{
     background-image: url(/assets/images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
-    height: 600px;
+    height: 800px;
 }
+.label{
+    margin: 300px 0 0 0;
+    padding: 0 40px;
+    text-align: center;
+}
+#graphic-design .label h2,#graphic-design .label p{
+    color: var(--Dark-desaturated-cyan);
+}
+#photography .label h2,#photography .label p{
+    color: var(--Dark-blue);
+}
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -152,7 +168,12 @@ ul li{
     nav{
         margin-left: 550px;
      }
-
+     #hero img{
+        margin-top: -100px;
+    }
+    .middle-section{
+        height: 600px;
+    }
      .middle-section article h2{
         padding: 140px 140px 40px;
         font-family: var(--Fraunces);
@@ -168,5 +189,21 @@ ul li{
         color: black;
         font-family: var(--Fraunces);
         padding: 0 140px;
+    }
+    #graphic-design{
+        height: 600px;
+    }
+    #photography{
+        height: 600px;
+    }
+    .label{
+        margin: 200px 0 0 0;
+    }
+    #graphic-design .label p,  
+    #photography .label p{
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0 100px;
+        
     }
 }
