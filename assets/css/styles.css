@@ -159,8 +159,38 @@ ul li{
 #photography .label h2,#photography .label p{
     color: var(--Dark-blue);
 }
+#testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#testimonials h2{
+    margin-top: 150px;
+    color: var(--Grayish-blue);
+    font-size: 1.2em;
+    font-family: var(--Fraunces);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#testimonials-wrapper{
+    display: flex;
+    height: 50vh;
+    align-items: center; 
+}
+#testimonials-wrapper article{
+    text-align: center;
+    margin: 0 70px;
+}
 
-
+#testimonials-wrapper img{
+    border-radius: 50%;
+    width: 70px;
+}
+#testimonials-wrapper p{
+    font-family: var(--Barlow);
+    line-height: 30px;
+    margin: 50px 0;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
