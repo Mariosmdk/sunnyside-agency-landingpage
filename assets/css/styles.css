@@ -42,7 +42,6 @@ header{
     margin-left: 100px ;
 }
 nav{
-   
    font-family: var(--Barlow);
    margin-left: 1000px;
 }
@@ -138,6 +137,7 @@ ul li{
     background-image: url(/assets/images/desktop/image-graphic-design.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 50%;
     height: 800px;
 }
@@ -145,6 +145,7 @@ ul li{
     background-image: url(/assets/images/desktop/image-photography.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 50%;
     height: 800px;
 }
@@ -179,7 +180,7 @@ ul li{
 }
 #testimonials-wrapper article{
     text-align: center;
-    margin: 0 70px;
+    margin: 0 150px;
 }
 
 #testimonials-wrapper img{
@@ -189,8 +190,56 @@ ul li{
 #testimonials-wrapper p{
     font-family: var(--Barlow);
     line-height: 30px;
-    margin: 50px 0;
+    margin: 50px 0 15px;
+    color: var(--Very-dark-grayish-blue);
 }
+#testimonials-wrapper .name{
+    color: black;
+    font-family: var(--Fraunces);
+    font-size: 1.2em;
+}
+#testimonials-wrapper h3{
+    font-family: var(--Barlow);
+    color: var(--Grayish-blue);
+    font-size: 1em;
+}
+
+#prefooter-photos{
+    display: flex;
+}
+#prefooter-photos img{
+    width: 100%;
+}
+
+footer{
+    background-color: #9cdbd0;
+    color: var(--Dark-desaturated-cyan);
+    text-align: center;
+    height: 40vh;
+    margin-top: -4px;
+}
+footer h2{
+    text-transform: lowercase;
+    font-family: var(--Fraunces);
+    font-size: 2.5em;
+    padding: 50px 0 0 0;
+}
+footer ul{
+    margin-top: 50px;
+}
+footer ul li{
+    display: inline-block;
+    margin: 0 30px;
+    font-family: var(--Barlow);
+}
+#icons li{
+    margin: 0 15px;
+}
+footer #icons img{
+    margin-top: 80px;
+    
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -235,5 +284,66 @@ ul li{
         margin: 0;
         padding: 0 100px;
         
+    }
+    
+    #testimonials{
+        padding: 50px 0 150px;
+    }
+
+    #testimonials-wrapper{
+        padding: 0 70px;
+    }
+
+    #testimonials-wrapper article{
+        margin: 0 30px;
+    }
+    
+
+    @media  screen and (max-width: 1440px) {
+
+        nav{
+            margin-left: 370px;
+         }
+        #hero h1{
+            font-size: 2.5em;
+            
+        }
+        #hero img{
+            width: 36px;
+            margin-top: -130px;
+        }
+        .middle-section{
+            height: 533px;
+        }
+         .middle-section article h2{
+            padding: 100px 140px 40px;
+            font-size: 2em;
+        }
+        .middle-section article p{
+            padding: 0 80px 40px 140px;
+            font-size: 1.1em;
+        }
+        .middle-section article a{
+            padding: 0 140px;
+        }
+        .label{
+            margin: 250px 0 0 0;
+        }
+        #graphic-design .label p,  
+        #photography .label p{
+            font-size: 1.1em;
+            margin: 0;
+            padding: 0 100px;
+            
+        }
+        
+        footer h2{
+            font-size: 2em;
+        }
+        footer #icons img{
+            margin-top: 40px;
+            
+        }
+
     }
 }
