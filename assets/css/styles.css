@@ -375,9 +375,9 @@ footer #icons img{
             margin: 0 0 0 100px;
             cursor: pointer;
         }
-        #mob-menu{
+        /* #mob-menu{
             display: none;
-        }
+        } */
         nav ul li{
             padding: 0 30px;
         }
