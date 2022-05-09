@@ -63,7 +63,7 @@ ul li{
 
 #btn-contact{
     background-color: var(--White);
-    margin: 0 100px 0 30px;
+    margin: 0 100px 0 0;
     font-family: var(--Fraunces);
     text-transform: uppercase;
     border: none;
@@ -79,7 +79,7 @@ ul li{
 #hero{
     height: 100vh;
     background-image: url(/assets/images/desktop/image-header.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     margin-bottom: -100px;
@@ -369,20 +369,35 @@ footer #icons img{
         #logo{
             margin-left: 70px ;
         }
-        
+       
         nav #hamburger{
             display: block;
             margin: 0 0 0 100px;
             cursor: pointer;
+            position: relative;
+            bottom: 130px;
         }
-        /* #mob-menu{
+         /* #mob-menu{
             display: none;
-        } */
+        }  */
+        nav ul{
+            background-color: var(--White);
+            position: relative;
+            top: 200px;
+            right: 525px;
+            width: 90vw;
+            height: 30vh;
+        }
         nav ul li{
             padding: 0 30px;
+            display: flex;
+            justify-content: center;
+            
+            
+            
         }
         nav ul li a{
-            color: var(--White);
+            color: var(--Dark-grayish-blue);
             text-decoration: none;
         }
         ul li{
@@ -390,7 +405,7 @@ footer #icons img{
         }
         
         #btn-contact{
-            background-color: var(--White);
+            background-color: var(--Yellow);
             margin: 0 100px 0 30px;
             font-family: var(--Fraunces);
             text-transform: uppercase;
